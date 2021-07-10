@@ -51,7 +51,8 @@ window.onload = function () {
   window.addEventListener("resize", () => {
     handleRefreshPositions(0);
   });
-
+  
+  // mapeamento da posição do scroll para habilitar o efeito de scrollspy
   window.addEventListener("scroll", (e) => {
     const scrollTop = window.scrollY;
 
@@ -70,7 +71,7 @@ window.onload = function () {
       }
     });
   });
-
+  
   navbarItemsLi.forEach((item) => {
     item.addEventListener("click", (e) => {
       const currentLiRefer = item.getAttribute("refer");
